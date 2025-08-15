@@ -1,0 +1,49 @@
+DataScienceChallengeTelecomX
+🚀 Predicción de Evasión de Clientes en Telecom X (Parte 2)
+
+Este proyecto nace de una pregunta muy sencilla pero con un gran impacto para Telecom X:
+¿por qué algunos clientes deciden irse y qué podemos hacer para retenerlos?
+
+La meta fue clara: usar datos reales para construir un modelo que nos ayude a anticipar la cancelación de clientes (churn) y, sobre todo, proponer acciones concretas para reducirla.
+
+🌱 El inicio del reto
+
+Todo comenzó con un dataset lleno de información sobre clientes: sus contratos, métodos de pago, servicios contratados y el tiempo que llevaban en la compañía.
+El reto fue transformarlo en conocimiento útil.
+
+Primero limpiamos y preparamos los datos:
+
+Tratamos valores nulos.
+
+Codificamos variables categóricas.
+
+Escalamos los datos para que los modelos no se “confundieran”.
+
+Balanceamos las clases, porque los clientes que se van siempre son menos que los que se quedan.
+
+🔍 Explorando los datos
+
+Antes de entrenar modelos, nos sumergimos en el EDA (Exploratory Data Analysis).
+Y ahí aparecieron las primeras pistas:
+
+Los contratos de mes a mes parecían una señal de alerta.
+
+Los clientes con soporte técnico tenían menos probabilidades de irse.
+
+Los pagos con “electronic check” estaban curiosamente ligados a una mayor evasión.
+
+Era como empezar a armar un rompecabezas.
+
+🤖 Modelando el churn
+
+Con los datos listos, entrenamos dos modelos:
+
+Logistic Regression
+
+Random Forest
+
+Los resultados fueron claros:
+
+Modelo	Accuracy	Precision	Recall	F1-score
+Logistic Regression	0.7949	0.6393	0.5214	0.5744
+Random Forest	0.7850	0.6220	0.4840	0.5444
